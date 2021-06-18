@@ -135,7 +135,7 @@ table th, table td {
 				<table>
 					<tr>
 						<td style="width: 20%;"><img class="choice-img-fluid"
-							src="resources/images/workoutImage/standingPulldown.png" alt="..." /></td>
+							src="resources/images/gif/standingPulldwon.gif" alt="..." /></td>
 
 						<td rowspan="3" style="width: 80%;">
 							<div class="circle-out center">

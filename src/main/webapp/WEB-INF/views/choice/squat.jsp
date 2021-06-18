@@ -307,6 +307,18 @@ table th, table td {
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="resources/js/jquery.confetti.js"></script>
 
+	<script>
+      var particleColors = {
+         colorOptions : [ "DodgerBlue", "OliveDrab", "Gold", "pink",
+               "SlateBlue", "lightblue", "Violet", "PaleGreen",
+               "SteelBlue", "SandyBrown", "Chocolate", "Crimson" ],
+         colorIndex : 0,
+         colorIncrementer : 0,
+         colorThreshold : 10
+      }
+   </script>
+
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -330,7 +342,7 @@ table th, table td {
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
         // Teachable Machine 내보내기 패널에서 제공하는 모델에 대한 링크
-        const URL = "resources/model/squat";
+        const URL = "resources/model/squat/";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
         async function init() { //model을 불러오고, 카메라를 설정해 준다음 loop를 돈다. 
@@ -410,21 +422,21 @@ table th, table td {
                 status = "squat";  
                 
                 msg = "AGAIN";
-                  $('#message').css("color","white");
+                $('#message').css("color","white");
                 $('#message').html(msg);
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
                 if (status == "squat" || status == "stand") {
                     
                 }
                 status = "wrong"; //우리는 wrong을 사용하고 있음.
-                  msg = "AGAIN";
-                  $('#message').css("color","red");
+                msg = "AGAIN";
+                $('#message').css("color","red");
                 $('#message').html(msg);
                 
             }else {
                msg = "AGAIN";
-                  $('#message').css("color","white");
-                $('#message').html(msg);
+               $('#message').css("color","white");
+               $('#message').html(msg);
             }
             //squat, 0~1까지의 확률
            /* for (let i = 0; i < maxPredictions; i++) { //3번
@@ -475,8 +487,8 @@ table th, table td {
            init();
            
            var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 8 ) * 1000); // set the countdown date
-           var time_limit = ((minutes * 8 ) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 10 ) * 1000); // set the countdown date
+           var time_limit = ((minutes * 10 ) * 1000);
            
            setTimeout(
               function() {
@@ -493,8 +505,8 @@ table th, table td {
        function SetCountDown() {
     	  
     	   var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 60) * 1000); // set the countdown date
-           var time_limit = ((minutes * 60) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 30) * 1000); // set the countdown date
+           var time_limit = ((minutes * 30) * 1000);
            
            setTimeout(
         	function() {

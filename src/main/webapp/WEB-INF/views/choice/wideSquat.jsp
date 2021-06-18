@@ -307,6 +307,18 @@ table th, table td {
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="resources/js/jquery.confetti.js"></script>
 
+	<script>
+      var particleColors = {
+         colorOptions : [ "DodgerBlue", "OliveDrab", "Gold", "pink",
+               "SlateBlue", "lightblue", "Violet", "PaleGreen",
+               "SteelBlue", "SandyBrown", "Chocolate", "Crimson" ],
+         colorIndex : 0,
+         colorIncrementer : 0,
+         colorThreshold : 10
+      }
+   </script>
+
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -330,7 +342,7 @@ table th, table td {
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
         // Teachable Machine 내보내기 패널에서 제공하는 모델에 대한 링크
-        const URL = "resources/model/wideSquat";
+        const URL = "resources/model/wideSquat/";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
         async function init() { //model을 불러오고, 카메라를 설정해 준다음 loop를 돈다. 
@@ -475,8 +487,8 @@ table th, table td {
            init();
            
            var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 8 ) * 1000); // set the countdown date
-           var time_limit = ((minutes * 8 ) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 10 ) * 1000); // set the countdown date
+           var time_limit = ((minutes * 10 ) * 1000);
            
            setTimeout(
               function() {
@@ -493,8 +505,8 @@ table th, table td {
        function SetCountDown() {
     	  
     	   var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 60) * 1000); // set the countdown date
-           var time_limit = ((minutes * 60) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 30) * 1000); // set the countdown date
+           var time_limit = ((minutes * 30) * 1000);
            
            setTimeout(
         	function() {

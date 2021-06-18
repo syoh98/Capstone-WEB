@@ -26,7 +26,7 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="resources/css/styles.css" rel="stylesheet" />
 <link href="resources/css/choice.css" rel="stylesheet" />
-<title>HealthU:: Backward Lunge</title>
+<title>HealthU:: BackwardLunge</title>
 <style>
 .modal-header .close2 {
 	padding: 1rem 1rem;
@@ -135,7 +135,7 @@ table th, table td {
 				<table>
 					<tr>
 						<td style="width: 20%;"><img class="choice-img-fluid"
-							src="resources/images/workoutImage/backwardLunge.png" alt="..." /></td>
+							src="resources/images/gif/backwardLunge.gif" alt="..." /></td>
 
 						<td rowspan="3" style="width: 80%;">
 							<div class="circle-out center">
@@ -307,6 +307,18 @@ table th, table td {
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="resources/js/jquery.confetti.js"></script>
 
+	<script>
+      var particleColors = {
+         colorOptions : [ "DodgerBlue", "OliveDrab", "Gold", "pink",
+               "SlateBlue", "lightblue", "Violet", "PaleGreen",
+               "SteelBlue", "SandyBrown", "Chocolate", "Crimson" ],
+         colorIndex : 0,
+         colorIncrementer : 0,
+         colorThreshold : 10
+      }
+   </script>
+
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -330,7 +342,7 @@ table th, table td {
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
         // Teachable Machine 내보내기 패널에서 제공하는 모델에 대한 링크
-        const URL = "resources/images/gif/backwardLunge.gif";
+        const URL = "resources/model/lunge/";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
         async function init() { //model을 불러오고, 카메라를 설정해 준다음 loop를 돈다. 
@@ -389,7 +401,7 @@ table th, table td {
             const { pose, posenetOutput } = await model.estimatePose(webcam.canvas);
             // 예측 2 : 학습 가능한 기계 분류 모델을 통해 입력 실행
             const prediction = await model.predict(posenetOutput);
-            //stand:0  squat:1  bent:2
+            //stand:0  lunge:1  bent:2
             if (prediction[0].probability.toFixed(2) > 0.90) {
                 if (status == "lunge") {
                     count++; //카운트 증가
@@ -397,6 +409,7 @@ table th, table td {
                     if(progress <= 0) {
                         progress = 327-32.7;
                     }
+                    
                     $('.progress').css('stroke-dashoffset', progress);
                     $('#counter').html(count);
                     
@@ -410,7 +423,7 @@ table th, table td {
                 status = "lunge";  
                 
                 msg = "AGAIN";
-                  $('#message').css("color","white");
+                $('#message').css("color","white");
                 $('#message').html(msg);
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
                 if (status == "lunge" || status == "stand") {
@@ -426,7 +439,7 @@ table th, table td {
                   $('#message').css("color","white");
                 $('#message').html(msg);
             }
-            //squat, 0~1까지의 확률
+        
            /* for (let i = 0; i < maxPredictions; i++) { //3번
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
@@ -475,8 +488,8 @@ table th, table td {
            init();
            
            var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 8 ) * 1000); // set the countdown date
-           var time_limit = ((minutes * 8 ) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 10 ) * 1000); // set the countdown date
+           var time_limit = ((minutes * 10 ) * 1000);
            
            setTimeout(
               function() {
@@ -493,8 +506,8 @@ table th, table td {
        function SetCountDown() {
     	  
     	   var minutes = $( '#set-time' ).val();
-           var target_date = new Date().getTime() + ((minutes * 60) * 1000); // set the countdown date
-           var time_limit = ((minutes * 60) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 30) * 1000); // set the countdown date
+           var time_limit = ((minutes * 30) * 1000);
            
            setTimeout(
         	function() {
