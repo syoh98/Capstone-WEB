@@ -45,7 +45,7 @@
          </div>
       
          <!-- Masthead Avatar Image-->
-         <div class="container align-items-center row">
+         <div class="container align-items-center ">
 			
             <div class="col-xs-6 md-5">
          	<c:choose>
@@ -130,7 +130,21 @@
             <!-- Masthead Heading-->
             <div class="col-xs-6 md-5">
                
-               <table class="table-mypg mb-3">
+               <table class="table-mypg mb-3 center2">
+               <tr>
+                  <td style="text-align: right">
+                  <h4 class="mastheader-heading font-weight-light">ㅤ</h4>
+                  </td>
+                  <td><h4 class="mastheader-heading font-weight-bold">
+					 </h4></td>
+               </tr>
+               <tr>
+                  <td style="text-align: right">
+                  <h4 class="mastheader-heading font-weight-light"> ㅤ</h4>
+                  </td>
+                  <td><h4 class="mastheader-heading font-weight-bold">
+					 </h4></td>
+               </tr>
                <tr>
                   <td style="text-align: right">
                   <h4 class="mastheader-heading font-weight-light">닉네임: </h4>

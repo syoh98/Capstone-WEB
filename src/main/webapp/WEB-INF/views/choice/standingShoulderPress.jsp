@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport"
@@ -23,287 +25,119 @@
 	rel="stylesheet" type="text/css" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="resources/css/styles.css" rel="stylesheet" />
-<link href="resources/css/countdown.css" rel="stylesheet" />
-
-<title>Choice:: Standing Shoulder Press</title>
+<link href="resources/css/choice.css" rel="stylesheet" />
+<title>HealthU:: Standing ShoulderPress</title>
 <style>
-@media ( min-width : 576px) {
-	#wrap {
-		max-width: 450px;
-	}
-	.start-img {
-		margin-top: -10%;
-	}
-	.wrap-text {
-		top: 400px;
-		left: 20px;
-		font-size: 1.25rem;
-	}
-	.btn-back {
-		top: 24%;
-		left: 88%;
-		font-size: 2rem;
-	}
+.modal-header .close2 {
+	padding: 1rem 1rem;
+	margin: -1rem -1rem -1rem auto;
 }
 
-@media ( min-width : 768px) {
-	#wrap {
-		max-width: 540px;
-	}
-	.start-img {
-		margin-top: -10%;
-	}
-	.wrap-text {
-		top: 400px;
-		left: 55px;
-		font-size: 1.3rem;
-	}
-	.btn-back {
-		top: 22%;
-		left: 88%;
-		font-size: 2.2rem;
-	}
-}
-
-@media ( min-width : 992px) {
-	#wrap {
-		max-width: 600px;
-	}
-	.start-img {
-		margin-top: -5%;
-	}
-	.wrap-text {
-		top: 400px;
-		left: 60px;
-		font-size: 1.5rem;
-	}
-	.btn-back {
-		top: 20%;
-		left: 89%;
-		font-size: 2.5rem;
-	}
-	.circle-out {
-		width: 120px;
-		height: 120px;
-		top: 7%;
-		left: 88%;
-	}
-	.circle-in {
-		width: 110px;
-		height: 110px;
-		top: 7%;
-		left: 88%;
-	}
-}
-
-@media ( min-width : 1200px) {
-	#wrap {
-		max-width: 750px;
-	}
-	.start-img {
-		margin-top: -5%;
-	}
-	.wrap-text {
-		top: 400px;
-		left: 87px;
-		font-size: 1.7rem;
-	}
-	.btn-back {
-		top: 12%;
-		left: 89%;
-		font-size: 2.75rem;
-	}
-	.circle-out {
-		width: 120px;
-		height: 120px;
-		top: 7%;
-		left: 88%;
-	}
-	.circle-in {
-		width: 110px;
-		height: 110px;
-		top: 7%;
-		left: 88%;
-	}
-}
-
-#range {
-	display: block;
-}
-
-.choice-border {
-	position: relative;
-	border: 6px solid #FFFFFF;
-	margin: -13% 8% -10% 8%;
-	padding-top: 5%;
-}
-
-.video-fluid {
-	position: relative;
-	max-width: 100%;
-	height: auto;
-	margin-top: -10%;
-	margin-bottom: 3%;
-	margin-right: 2%;
+.portfolio-modal .close2 {
+	position: absolute;
 	z-index: 1;
+	right: 1.5rem;
+	top: 1rem;
+	font-size: 3rem;
+	line-height: 3rem;
+	color: skyblue;
+	opacity: 1;
 }
 
-.workout-count-time {
+.close2 {
+	float: right;
 	font-size: 1.5rem;
-	line-height: 1.5rem;
-}
-
-.rect-white {
-	max-width: 100%;
-	height: auto;
-	padding: 10%;
-	border-radius: 50% 20%/10% 40%;
-	background-color: #FFFDFF;
-	text-align: center;
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.btn-back {
-	background-color: transparent;
-	color: #6799FF;
+	font-weight: 700;
+	line-height: 1;
+	color: skyblue;
+	text-shadow: 0 1px 0 #fff;
 	opacity: 0.5;
-	z-index: 2;
 }
 
-#message {
-	font-size: 2rem;
+.close2:hover {
+	color: #000;
+	text-decoration: none;
 }
 
-#wrap:hover {
-	background: #D9E5FF;
-	color: #9DCEFF;
-	opacity: 0.8;
+.close2:not (:disabled ):not (.disabled ):hover, .close:not (:disabled ):not
+	(.disabled ):focus {
+	opacity: 0.75;
 }
 
-#wrap {
-	position: fixed;
-	width: 750px;
-	height: 500px;
-	margin: 0;
+button.close2 {
 	padding: 0;
-	background: #FFFFFF;
-	color: #4374D9;
-	border-radius: 10% 10%/10% 10%;
-	top: 50%;
-	left: 50%;
-	z-index: 3;
+	background-color: transparent;
+	border: 0;
+}
+
+a.close2.disabled {
+	pointer-events: none;
+}
+
+.finish-text {
+	font-size: 2.5rem;
 	text-align: center;
 	font-style: bold;
+	color: #4374D9;
 }
 
-.start-img:hover {
-	opacity: 0.8;
+table {
+	width: 90%;
+	margin: 2% 4% 2% 4%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	table-layout: auto;
 }
 
-.start-img {
-	position: fixed;
-	width: 250px;
-	height: auto;
-	padding: 20px 10px 5px 10px;
-	border: 4px dashed #B2CCFF;
-}
-
-.wrap-text {
-	position: fixed;
-}
-
-.circle-out {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background: #FFFFFF;
-	top: -5%;
-	left: 90%;
-	z-index: 4;
-}
-
-.circle-in {
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	background: #FFFFFF;
+table th, table td {
+	height: 25px;
+	margin-left: 2%;
 	text-align: center;
-	line-height: 200px;
-	border: 5px solid #00d3d3;
-	top: 50%;
-	left: 50%;
-	z-index: 4;
-}
-
-.counter-text {
-	text-align: center;
-	color: #8C8C8C;
-	font-size: 50px;
 	font-weight: bold;
-	top: 50%;
-	left: 50%;
-	z-index: 4;
+	font-size: 2rem;
 }
 </style>
 </head>
+
 <body class="bg-primary">
-	<div class="masthead c bg-primary text-dark text-center bg-primary">
+	<div>
 		<div id="wrap" class="center">
-			<img class="center start-img"
-				src="resources/images/img/stretching.png" alt="..." />
-			<p class="wrap-text">운동을 위해 카메라를 켜고 자세를 잡아주세요</p>
+			<div>
+				<img class="center start-img"
+					src="resources/images/img/stretching.png" alt="..." />
+			</div>
+			<div class="wrap-text" style="top: 88%; left: 3%;">
+				운동을 위해
+				<p
+					style="color: RED; display: inline; font-weight: bold; text-align: center;">화면</p>
+				을 돌리고 자세를 잡아주세요<br />
+				<p class="mt-2">화면을 터치하면 운동이 시작됩니다</p>
+			</div>
 
 		</div>
 
 		<script type="text/javascript">
-			document.getElementById('wrap').onclick = function() {
-				view();
-				//document.getElementById("wrap").style.visibility = "hidden";
-				//document.getElementById("main").style.visibility = true;
-				document.getElementById("main").hidden = false;
-	            document.getElementById("wrap").hidden = true;
-				
-			}
-		</script>
+         document.getElementById('wrap').onclick = function() {
+            view();
+            //document.getElementById("wrap").style.visibility = "hidden";
+            //document.getElementById("main").style.visibility = true;
+            document.getElementById("main").hidden = false;
+               document.getElementById("wrap").hidden = true;
+            
+         }
+      </script>
 
 		<div id="main" hidden>
-
-			<i class="center btn-back fas fa-times-circle"
+			<i id="btn-back" class="fas fa-times"
 				onclick="location.href='${pageContext.request.contextPath}/choice'"></i>
-				
-			<div class="choice-border">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-4 md-4">
-							<table>
-								<tr>
-									<td><img class="img-fluid"
-										src="resources/images/workoutImage/standingShoulderPress.png" alt="..." />
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div style="margin-top: 10%;">
-											<input type="hidden" id="set-time" value="1" />
-											<div id="countdown">
-												<div id='tiles' class="color-full"></div>
-											</div>
-										</div>
-									</td>
-								</tr>
+			<div
+				style="position: static; border: 5px solid #fff; border-radius: 15% 15%/15% 15%; margin-left: 20px; margin-right: 20px;'">
+				<table>
+					<tr>
+						<td style="width: 20%;"><img class="choice-img-fluid"
+							src="resources/images/gif/standingShoulderPress.gif" alt="..." /></td>
 
-								<tr>
-									<td>
-										<div class="rect-white mt-5 mb-5 py-5 px-5">
-											<div id="message"></div>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-
-						<div class="col-md-8 col-lg-8 mt-4">
+						<td rowspan="3" style="width: 80%;">
 							<div class="circle-out center">
 								<div class="circle-in center">
 									<div id="counter" class="counter-text center">0</div>
@@ -312,13 +146,166 @@
 							<div>
 								<canvas id="canvas" class="video-fluid"></canvas>
 							</div>
+						</td>
+
+					</tr>
+					<tr>
+						<td><input type="hidden" id="set-time" value="1" />
+							<div id="countdown">
+								<div id='tiles' class="color-full">00:00:00</div>
+							</div></td>
+					</tr>
+					<tr>
+						<td>
+							<div class="rect-white py-5 px-5">
+								<p id="message" class="center">Start!</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- end Modal 1-->
+	<div class="portfolio-modal modal fade" id="modal" tabindex="-1"
+		role="dialog" aria-labelledby="portfolioModal1Label"
+		aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document" style="top: 10%;">
+			<div class="modal-content">
+				<div class="modal-body text-center">
+					<div class="container">
+
+
+						<div class="finish-text mb-5">수고하셨습니다.</div>
+						<div>
+							<sf:form method="post"
+								action="${pageContext.request.contextPath}/saveTotalTime"
+								modelAttribute="user">
+								<c:set var="total_standingShoulderPress_time"
+									value='${user.day_time + 60.0 }' />
+								<c:set var="total_standingShoulderPress_cal"
+									value='${user.day_cal + 7.0 }' />
+								<sf:input id="day_time" value="${total_standingShoulderPress_time }" path="day_time"
+									style="display:none;" />
+								<sf:input id="day_cal" value="${total_standingShoulderPress_cal }" path="day_cal"
+									style="display:none;" />
+
+								<sf:input type="text" class="form-control" id="point"
+									value="${user.point }"
+									style="background-color: white; width:250px; display:none;"
+									path="point" />
+								<sf:input type="text" class="form-control" id="id"
+									value="${user.id }"
+									style="background-color: white; width:250px; display:none;"
+									path="id" />
+								<sf:input type="text" class="form-control" id="user_id"
+									value="${user.user_id }"
+									style="background-color: white; width:250px; display:none;"
+									path="user_id" />
+								<sf:input type="text" class="form-control" id="username"
+									value="${user.username }"
+									style="background-color: white; width:250px; display:none;"
+									path="username" />
+								<sf:input type="text" class="form-control" id="password"
+									value="${user.password }"
+									style="background-color: white; width:250px; display:none;"
+									path="password" />
+								<sf:input type="text" class="form-control" id="enabled"
+									value="${user.enabled }"
+									style="background-color: white; width:250px; display:none;"
+									path="enabled" />
+								<sf:input type="text" class="form-control" id="gender"
+									value="${user.gender }"
+									style="background-color: white; width:250px; display:none;"
+									path="gender" />
+								<sf:input type="text" name="height" id="height"
+									onkeypress="isNumber()" class="form-control2"
+									value="${user.height }"
+									style="background-color: white; width: 200px; display:none;"
+									path="height" />
+								<sf:input type="text" name="weight" id="weight"
+									onkeypress="isNumber()" class="form-control2"
+									value="${user.weight }"
+									style="background-color: white; width: 200px; display:none;"
+									path="weight" />
+								<sf:input type="text" name="profile_character"
+									id="profile_character" class="form-control2"
+									value="${user.profile_character }"
+									style="background-color: white; width: 200px; display:none;"
+									path="profile_character" />
+
+
+								<sf:input type="text" class="form-control" id="getCheeseAeong"
+									value="${user.cheeseAeong }"
+									style="background-color: white; width:250px; display:none;"
+									path="cheeseAeong" />
+								<sf:input type="text" class="form-control" id="getBlackAeong"
+									value="${user.blackAeong }"
+									style="background-color: white; width:250px; display:none;"
+									path="blackAeong" />
+								<sf:input type="text" class="form-control" id="getBanana"
+									value="${user.banana }"
+									style="background-color: white; width:250px; display:none;"
+									path="banana" />
+								<sf:input type="text" class="form-control" id="getCookies"
+									value="${user.cookies }"
+									style="background-color: white; width:250px; display:none;"
+									path="cookies" />
+								<sf:input type="text" class="form-control" id="getMilitary"
+									value="${user.military }"
+									style="background-color: white; width:250px; display:none;"
+									path="military" />
+								<sf:input type="text" class="form-control" id="getGongdaesang"
+									value="${user.gongdaesang }"
+									style="background-color: white; width:250px; display:none;"
+									path="gongdaesang" />
+								<sf:input type="text" class="form-control" id="getHaribo"
+									value="${user.haribo }"
+									style="background-color: white; width:250px; display:none;"
+									path="haribo" />
+								<sf:input type="text" class="form-control" id="getBoogi"
+									value="${user.boogi }"
+									style="background-color: white; width:250px; display:none;"
+									path="boogi" />
+								<sf:input type="text" class="form-control" id="getWoody"
+									value="${user.woody }"
+									style="background-color: white; width:250px; display:none;"
+									path="woody" />
+								<sf:input type="text" class="form-control" id="getSue"
+									value="${user.sue }"
+									style="background-color: white; width:250px; display:none;"
+									path="sue" />
+								<sf:input type="text" class="form-control" id="getHanbok"
+									value="${user.hanbok }"
+									style="background-color: white; width:250px; display:none;"
+									path="hanbok" />
+								<sf:input type="text" class="form-control" id="getDftChar"
+									value="${user.dftChar }"
+									style="background-color: white; width:250px; display:none;"
+									path="dftChar" />
+								<sf:input type="text" class="form-control" id="getRapunzel"
+									value="${user.rapunzel }"
+									style="background-color: white; width:250px; display:none;"
+									path="rapunzel" />
+								<sf:input type="text" class="form-control" id="getRapunzel"
+									value="${user.rapunzel }"
+									style="background-color: white; width:250px; display:none;"
+									path="rapunzel" />
+
+								<button type="submit" class="btn-buy">메인으로</button>
+							</sf:form>
 						</div>
+						<div id="startConfetti"></div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="resources/js/jquery.confetti.js"></script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -343,7 +330,7 @@
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
         // Teachable Machine 내보내기 패널에서 제공하는 모델에 대한 링크
-        const URL = "resources/model/";
+        const URL = "resources/model/standingShoulderPress";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
         async function init() { //model을 불러오고, 카메라를 설정해 준다음 loop를 돈다. 
@@ -387,7 +374,11 @@
         var progress = 327;
         var status = "stand"; //서 있는 상태
         var count = 0; //운동 카운트
-        var msg = "start!"; //msg 선언
+        var msg = "START"; //msg 선언
+        
+        $('#message').css("color","white");
+        $('#message').html(msg);
+        
         async function predict() {
             //1번 model을 불러오고
             //2번 model의 결과를 뽑아서 prediction classname, classname하고
@@ -400,7 +391,7 @@
             const prediction = await model.predict(posenetOutput);
             //stand:0  squat:1  bent:2
             if (prediction[0].probability.toFixed(2) > 0.90) {
-                if (status == "squat") {
+                if (status == "setup") {
                     count++; //카운트 증가
                     progress = progress-32.7;
                     if(progress <= 0) {
@@ -408,28 +399,35 @@
                     }
                     $('.progress').css('stroke-dashoffset', progress);
                     $('#counter').html(count);
+                    
+                    msg = "GREAT";
+                    $('#message').css("color","blue");
+                    $('#message').html(msg);
                 }
                 status = "stand";
-                
+ 
             } else if (prediction[1].probability.toFixed(2) == 1.00) {
-                status = "squat";
+                status = "squat";  
                 
-                msg = "GOOD";
-                $('#message').css("color","blue");
+                msg = "AGAIN";
+                  $('#message').css("color","white");
                 $('#message').html(msg);
-                
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
                 if (status == "squat" || status == "stand") {
                     
                 }
                 status = "bent"; //우리는 wrong을 사용하고 있음.
-               	msg = "BAD";
-               	$('#message').css("color","red");
+                  msg = "AGAIN";
+                  $('#message').css("color","red");
                 $('#message').html(msg);
                 
+            }else {
+               msg = "AGAIN";
+                  $('#message').css("color","white");
+                $('#message').html(msg);
             }
             //squat, 0~1까지의 확률
-            /* for (let i = 0; i < maxPredictions; i++) { //3번
+           /* for (let i = 0; i < maxPredictions; i++) { //3번
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
@@ -442,11 +440,11 @@
             if (webcam.canvas) {
                 ctx.drawImage(webcam.canvas, 0, 0);
                 // 키포인트와 스켈레톤 그리기, 지우면 키 포인트 사라짐
-               /*  if (pose) {
+                  if (pose) {
                     const minPartConfidence = 0.5;
                     tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
-                      tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
-                } */
+                     tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+                }
             }
         }
         
@@ -477,80 +475,79 @@
            init();
            
            var minutes = $( '#set-time' ).val();
-		   var target_date = new Date().getTime() + ((minutes * 15 ) * 1000); // set the countdown date
-		   var time_limit = ((minutes * 15 ) * 1000);
+           var target_date = new Date().getTime() + ((minutes * 8 ) * 1000); // set the countdown date
+           var time_limit = ((minutes * 8 ) * 1000);
            
-		   setTimeout(
-		 		function() {
-		 			SetCountDown();
-			}, time_limit );
-		   
+           setTimeout(
+              function() {
+                 SetCountDown();
+           }, time_limit );
+          
+           msg = "Camera ON";
+           $('#message').css("color","black");
+           $('#message').html(msg);
+
         }
 
-		//countdown code
-	 	function SetCountDown() {
-	 			
-				//init();
-	 			/* async function loop(timestamp) { //계속 자기 자신을 호출하면서 반복된
-	 	            webcam.update(); // 웹캠 프레임 업데이트
-	 	            await predict(); 
-	 	            window.requestAnimationFrame(loop);
-	 	        } */
-		
-				var minutes = $( '#set-time' ).val();
-				var target_date = new Date().getTime() + ((minutes * 60 ) * 1000); // set the countdown date
-				var time_limit = ((minutes * 60 ) * 1000);
-				//set actual timer
-				setTimeout(
-		 			function() {
-		 				location.href = "choiceEnd"; //"choiceEnd?count="+count;
-	 				  //alert( 'done' );
-	 			     //$(location).attr('href','choiceEnd.jsp');
+      //countdown code
+       function SetCountDown() {
+    	  
+    	   var minutes = $( '#set-time' ).val();
+           var target_date = new Date().getTime() + ((minutes * 60) * 1000); // set the countdown date
+           var time_limit = ((minutes * 60) * 1000);
+           
+           setTimeout(
+        	function() {
+        		msg = "FINISH";
+                $('#message').css("color","black");
+                $('#message').html(msg);
+                
+                $(".modal").modal({show:true});
+            }, time_limit );
 
-			  	}, time_limit );
+        
+            var days, hours, minutes, seconds; // variables for time units
+            var countdown = document.getElementById("tiles"); // get tag element
 
-				var days, hours, minutes, seconds; // variables for time units
-				var countdown = document.getElementById("tiles"); // get tag element
+            getCountdown();
 
-				getCountdown();
+            setInterval(function () { getCountdown(); }, 1000);
 
-				setInterval(function () { getCountdown(); }, 1000);
+            function getCountdown(){
+               // find the amount of "seconds" between now and target
+               var current_date = new Date().getTime();
+               var seconds_left = (target_date - current_date) / 1000;
+     
+               if ( seconds_left >= 0 ) {
+                    console.log(time_limit);
+                     if ( (seconds_left * 1000 ) < ( time_limit / 2 ) )  {
+                       $( '#tiles' ).removeClass('color-full');
+                       $( '#tiles' ).addClass('color-half');
+                     } 
+                      if ( (seconds_left * 1000 ) < ( time_limit / 4 ) )  {
+                         $( '#tiles' ).removeClass('color-half');
+                         $( '#tiles' ).addClass('color-empty');
+                     }
+     
+                  days = pad( parseInt(seconds_left / 86400) );
+                  seconds_left = seconds_left % 86400;
+          
+                  hours = pad( parseInt(seconds_left / 3600) );
+                  seconds_left = seconds_left % 3600;
+              
+                  minutes = pad( parseInt(seconds_left / 60) );
+                  seconds = pad( parseInt( seconds_left % 60 ) );
+         
+                  // format countdown string + set tag value
+                  countdown.innerHTML = "<span>" + hours + ":</span><span>" + minutes + ":</span><span>" + seconds + "</span>"; 
 
-				function getCountdown(){
-					// find the amount of "seconds" between now and target
-					var current_date = new Date().getTime();
-					var seconds_left = (target_date - current_date) / 1000;
-	  
-					if ( seconds_left >= 0 ) {
-	 	 				console.log(time_limit);
-	  					 if ( (seconds_left * 1000 ) < ( time_limit / 2 ) )  {
-	     					$( '#tiles' ).removeClass('color-full');
-	     					$( '#tiles' ).addClass('color-half');
-	   					} 
-	  	  				if ( (seconds_left * 1000 ) < ( time_limit / 4 ) )  {
-	  		  				$( '#tiles' ).removeClass('color-half');
-	  		  				$( '#tiles' ).addClass('color-empty');
-	 	 			 	}
-	  
-						days = pad( parseInt(seconds_left / 86400) );
-						seconds_left = seconds_left % 86400;
-			 
-						hours = pad( parseInt(seconds_left / 3600) );
-						seconds_left = seconds_left % 3600;
-			 	 
-						minutes = pad( parseInt(seconds_left / 60) );
-						seconds = pad( parseInt( seconds_left % 60 ) );
-			
-						// format countdown string + set tag value
-						countdown.innerHTML = "<span>" + hours + ":</span><span>" + minutes + ":</span><span>" + seconds + "</span>"; 
+               }
+            }
 
-					}
-				}
-
-				function pad(n) {
-					return (n < 10 ? '0' : '') + n;
-				}
-		} //카메라 켜지는 시간을 고려해 10초 뒤에 타이머가 작동하도록
+            function pad(n) {
+               return (n < 10 ? '0' : '') + n;
+            }
+      } //카메라 켜지는 시간을 고려해 10초 뒤에 타이머가 작동하도록
 
     </script>
 </body>

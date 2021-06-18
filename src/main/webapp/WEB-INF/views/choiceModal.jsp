@@ -93,7 +93,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/wideSquat.png" alt="..." />
+									src="resources/images/gif/wideSquat.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -140,7 +140,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/squat.png" alt="..." />
+									src="resources/images/gif/squat.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -188,7 +188,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/lunge.png" alt="..." />
+									src="resources/images/gif/lunge.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -237,7 +237,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/sideLunge.png" alt="..." />
+									src="resources/images/gif/sideLunge.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -287,7 +287,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/sideKneeUp.png" alt="..." />
+									src="resources/images/gif/sideKneeUp.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -336,7 +336,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/standingSideLegRaises.png"
+									src="resources/images/gif/sideLateralRaise.gif"
 									alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">양손으로 벽이나 의자를 짚고 운동하면 균형잡기에 더욱 용이합니다.</p>
@@ -388,7 +388,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/goodMorning.png" alt="..." />
+									src="resources/images/gif/goodMorning.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">상체가 앞으로 많이 쏠리게 되면, 척추에 무리가 갈 수 있습니다. 주의해주세요</p>
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
@@ -436,7 +436,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/sideLateralRaise.png"
+									src="resources/images/gif/standingSideLegRaises.gif"
 									alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">초보자의 경우 가벼운 덤벨을 사용하시는 것을 추천합니다</p>
@@ -488,7 +488,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/standingShoulderPress.png"
+									src="resources/images/gif/standingShoulderPress.gif"
 									alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">덤벨을 사용해서 진행해야 효과가 좋습니다.</p>
@@ -537,7 +537,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/frontRaise.png" alt="..." />
+									src="resources/images/gif/frontRaise.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-2" style="font-size: 1rem; color: #030066; font-weight: 600">너무 무거운 덤벨은 어깨에 무리가 갈 수 있으니</p>
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">본인이 들 수 있는 무게보다 조금 저중량으로 준비해 주세요</p>
@@ -558,49 +558,7 @@ a.close2.disabled {
 	</div>
 
 	<!-- Portfolio Modal 11-->
-	<div class="portfolio-modal modal fade" id="portfolioModal11"
-		tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label"
-		aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
-			<div class="modal-content">
-				<button class="close2" type="button" data-dismiss="modal"
-					aria-label="Close">
-					<span aria-hidden="true"><i class="fas fa-times"></i></span>
-				</button>
-				<div class="modal-body text-center">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-11">
-								<!-- Portfolio Modal - Title-->
-								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0"
-									id="portfolioModal1Label">사이드 킥</h2>
-								<!-- Icon Divider-->
-								<div class="divider-custom">
-									<div class="divider-custom-line"></div>
-									<div class="divider-custom-icon2">
-										<i class="fas fa-dumbbell"></i>
-									</div>
-									<div class="divider-custom-line"></div>
-								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/sideKick.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
-									운동순서 설명 ]</p>
-
-								<button class="btn-buy" data-dismiss="modal"
-									onclick="location.href='${pageContext.request.contextPath}/sideKick'">
-									사이드 킥 시작</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
 	<!-- Portfolio Modal 12-->
 	<div class="portfolio-modal modal fade" id="portfolioModal12"
 		tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label"
@@ -629,7 +587,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/stepUp.png" alt="..." />
+									src="resources/images/gif/step.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">발판이나 계단을 사용해서 운동을 시작합니다</p>
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
@@ -679,7 +637,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/dumbbellThruster.png"
+									src="resources/images/gif/dumbebellTruster.gif"
 									alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">아령이 필요한 운동입니다. 아령을 준비해주세요</p>
@@ -702,50 +660,6 @@ a.close2.disabled {
 	</div>
 
 	<!-- Portfolio Modal 14-->
-	<div class="portfolio-modal modal fade" id="portfolioModal14"
-		tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label"
-		aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
-			<div class="modal-content">
-				<button class="close2" type="button" data-dismiss="modal"
-					aria-label="Close">
-					<span aria-hidden="true"><i class="fas fa-times"></i></span>
-				</button>
-				<div class="modal-body text-center">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-11">
-								<!-- Portfolio Modal - Title-->
-								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0"
-									id="portfolioModal1Label">킥 얼터네이트 토 터치</h2>
-								<!-- Icon Divider-->
-								<div class="divider-custom">
-									<div class="divider-custom-line"></div>
-									<div class="divider-custom-icon2">
-										<i class="fas fa-dumbbell"></i>
-									</div>
-									<div class="divider-custom-line"></div>
-								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/kickAlternateToeTouch.png"
-									alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">덤벨을 사용해서 진행해야 효과가 좋습니다.</p>
-								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
-									운동순서 설명 ]</p>
-
-								<button class="btn-buy" data-dismiss="modal"
-									onclick="location.href='${pageContext.request.contextPath}/kickAlternateToeTouch'">
-									킥 얼터네이트 토 터치 시작</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- Portfolio Modal 15-->
 	<div class="portfolio-modal modal fade" id="portfolioModal15"
@@ -775,7 +689,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/chairSquat.png" alt="..." />
+									src="resources/images/gif/chairSquat.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">의자를 준비해주세요. 의자 없이도 가능합니다</p>
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
@@ -796,53 +710,7 @@ a.close2.disabled {
 	</div>
 
 	<!-- Portfolio Modal 16-->
-	<div class="portfolio-modal modal fade" id="portfolioModal16"
-		tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label"
-		aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
-			<div class="modal-content">
-				<button class="close2" type="button" data-dismiss="modal"
-					aria-label="Close">
-					<span aria-hidden="true"><i class="fas fa-times"></i></span>
-				</button>
-				<div class="modal-body text-center">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-11">
-								<!-- Portfolio Modal - Title-->
-								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0"
-									id="portfolioModal1Label">의자 런지</h2>
-								<!-- Icon Divider-->
-								<div class="divider-custom">
-									<div class="divider-custom-line"></div>
-									<div class="divider-custom-icon2">
-										<i class="fas fa-dumbbell"></i>
-									</div>
-									<div class="divider-custom-line"></div>
-								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/chairLunge.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">의자를 준비해주세요. 의자 위에 올라가기 위해 꼭 필요합니다</p>
-								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
-									운동순서 설명 ]</p>
-								<p class="mb-3" style="font-weight: 500;">1. 의자 앞에 서 주세요</p>
-								<p class="mb-3" style="font-weight: 500;">2. 의자 위에 오른 발을 올려주세요 무릎의 각도가 90도가 되도 유지해 주세요</p>
-								<p class="mb-3" style="font-weight: 500;">3. 무릎의 각도를 유지하면서 올라갔다 내려오는 것을 반복해 주세요</p>
-								<p class="mb-3" style="font-weight: 500;">4. 내릴때는 최대한 천천히 뒤로 내려가세요</p>
-								<p class="mb-5" style="font-weight: 500;">5. 양쪽을 반복해서 진행해주세요</p>
-								<button class="btn-buy" data-dismiss="modal"
-									onclick="location.href='${pageContext.request.contextPath}/chairLunge'">
-									의자 런지 시작</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- Portfolio Modal 17-->
 	<div class="portfolio-modal modal fade" id="portfolioModal17"
@@ -872,7 +740,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/backwardLunge.png" alt="..." />
+									src="resources/images/gif/backwardLunge.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
 									운동순서 설명 ]</p>
@@ -920,7 +788,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/quarterSquat.png" alt="..." />
+									src="resources/images/gif/quaterSquat.gif" alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-4" style="font-size: 1rem; color: #030066; font-weight: 600">무릎 관절이 약하신 분들이 하기에 추천하는 스쿼트 입니다</p>
 								<p class="mb-5" style="font-size: 1.5rem; font-weight: bold;">[
@@ -1017,7 +885,7 @@ a.close2.disabled {
 								</div>
 								<!-- Portfolio Modal - Image-->
 								<img class="modal-img-fluid rounded mb-5"
-									src="resources/images/workoutImage/standingPulldown.PNG"
+									src="resources/images/gif/standingPulldwon.gif"
 									alt="..." />
 								<!-- Portfolio Modal - Text-->
 								<p class="mb-3" style="font-size: 1rem; color: #030066; font-weight: 600">도구 없이 하는 풀다운입니다</p>

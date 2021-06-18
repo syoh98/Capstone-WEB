@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 <meta charset="UTF-8">
 <!-- Favicons, 홈 페이지 아이콘 -->
@@ -204,7 +204,14 @@
 							</tr>
 						</table>
 					</div>
-							
+					
+					
+							<!-- Icon Divider-->
+				<div class="divider-custom divider-light">
+					<div class="divider-custom-line"></div>
+				</div>
+				
+				
 					<div class="container d-flex align-items-center row ">
 				<c:choose>
 					<c:when test="${user.cheeseAeong == 1 }">

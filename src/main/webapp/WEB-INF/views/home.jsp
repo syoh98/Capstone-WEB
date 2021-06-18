@@ -25,6 +25,8 @@
 
 <title>HealthU :: Home</title>
 
+
+
 </head>
 <body id="page-top" style="background-color:#1a252f">
    <!-- Navigation-->
@@ -49,7 +51,8 @@
 
                      <!-- Slide 1 -->
                      <div class="carousel-item active bgimg-fit"
-                        style="background-image: url(https://static01.nyt.com/images/2017/04/09/well/9minute-workout-promo/9minute-workout-promo-jumbo.png)">
+                        style="background-image: url(https://static01.nyt.com/images/2017/04/09/well/9minute-workout-promo/9minute-workout-promo-jumbo.png);
+                        	background-size: cover; ">
                         <div class="carousel-container">
                            <div class="carousel-content">
                               <h2 class="animate__animated animate__fadeInDown">
@@ -66,18 +69,20 @@
 
                      <!-- Slide 2 -->
                      <div class="carousel-item bgimg-fit" 
-                        style="background: url(https://static01.nyt.com/images/2017/10/30/well/weight-promo/weight-promo-master768.png)">
+                        style="background: url(https://static01.nyt.com/images/2017/10/30/well/weight-promo/weight-promo-master768.png);
+                        	background-size: cover; background-repeat: no-repeat;">
                         <div class="carousel-container">
                            <div class="carousel-content">
                               <h2 class="animate__animated animate__fadeInDown">
                                  Let's <span>Workout</span> Together!
                               </h2>
-                              <p class="animate__animated animate__fadeInUp">운동을 하면 기분이 조크든요.
-                                 정말인가요? 구라인가 직접 해보세요! 당신의 기분도 좋아지련지는 나도 몰라요. 알아서 찾아내봐요.
-                                 조크조크조크든요.~~ 홀롤 로 로 로 여기에는 뭘 써야하지 운동을 하면 땀나. 주륵 주르륵륵
+                              <p class="animate__animated animate__fadeInUp">
+                              	If you don’t make time for exercise, you’ll probably have to make time for illness.
+								<br>Robin Sharma<br><br>
                                  
-                                 내 땀도 주르륵 주르륵~ 땀이 흘러 내려 티셔츠 젖어가잖아~ 땀, 땀, 땀, 피땀눈물우우
-                                 architecto.</p>
+                                 운동을 위해 시간을 내지 않으면,병 때문에 시간을 내야하게 될지도 모른다.
+                                 <br>로빈 샤머
+                              </p>
                               <a href="workout"
                                  class="btn-get-started animate__animated animate__fadeInUp">Let's
                                  Go</a>
@@ -87,13 +92,19 @@
 
                      <!-- Slide 3 -->
                      <div class="carousel-item bgimg-fit"
-                        style="background: url(/webapp/resources/assets/img/slide/slide-3.jpg)">
+                        style="background: url(https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); 
+                        	background-size: cover; background-repeat: no-repeat; background-position: center;">
                         <div class="carousel-container">
                            <div class="carousel-content">
                               <h2 class="animate__animated animate__fadeInDown">
                                  문구 <span>강조</span>
                               </h2>
-                              <p class="animate__animated animate__fadeInUp">내용쓰</p>
+                              <p class="animate__animated animate__fadeInUp">
+                              You have to exercise, or at some point you’ll just break down.
+                              <br>Barack Obama<br><br>
+                              운동 해야 한다. 그렇지 않으면 어느 순간 당신은 고장 날 것이다.
+                              <br>버락 오바마                       
+								</p>
                               <a href=""
                                  class="btn-get-started animate__animated animate__fadeInUp">Read
                                  More</a>
@@ -122,23 +133,7 @@
 
    <!-- Footer-->
    <%@include file="footer.jsp"%>
-   
-   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-   <div class="scroll-to-top d-lg-none position-fixed">
-      <a class="js-scroll-trigger d-block text-center text-white rounded"
-         href="#page-top"><i class="fa fa-chevron-up"></i></a>
-   </div>
 
-   <!-- Bootstrap core JS-->
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-   <!-- Third party plugin JS-->
-   <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-   <!-- Contact form JS-->
-   <script src="resources/assets/mail/jqBootstrapValidation.js"></script>
-   <!-- Core theme JS-->
-   <script src="resources/js/scripts.js"></script>
+ 
 </body>
 </html>

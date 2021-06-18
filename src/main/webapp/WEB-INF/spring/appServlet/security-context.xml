@@ -22,7 +22,7 @@
 		<intercept-url pattern="/mypage"
 			access="isAuthenticated()" />
 		<intercept-url pattern="/about" access="permitAll" />
-		<intercept-url pattern="/choice" access="permitAll" />
+		<intercept-url pattern="/choice" access="isAuthenticated()" />
 		<intercept-url pattern="/choice2" access="permitAll" />
 		<intercept-url pattern="/choiceModal" access="permitAll" />
 		<intercept-url pattern="/pt" access="permitAll" />
@@ -30,11 +30,11 @@
 		<intercept-url pattern="/shop" access="isAuthenticated()" />
 		<intercept-url pattern="/signup" access="permitAll" />
 		<intercept-url pattern="/usercreated" access="permitAll" />
-		<intercept-url pattern="/workout" access="permitAll" />
+		<intercept-url pattern="/workout" access="isAuthenticated()" />
 		<intercept-url pattern="/squat" access="permitAll" />
 		<intercept-url pattern="/wideSquat" access="permitAll" />
 		<intercept-url pattern="/choiceEnd" access="permitAll" />
-		<intercept-url pattern="/collection" access="permitAll" />
+		<intercept-url pattern="/collection" access="isAuthenticated()" />
 		<intercept-url pattern="/resources/**"
 			access="permitAll" />
 		<intercept-url pattern="/**" access="permitAll" />

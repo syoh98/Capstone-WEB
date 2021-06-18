@@ -42,8 +42,8 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav me-auto mb-2 mb-md-0">
-					<li class="nav-item"><a class="nav-link"
-						href="${pageContext.request.contextPath}/about">About</a></li>
+					<!-- <li class="nav-item"><a class="nav-link"
+						href="${pageContext.request.contextPath}/about">About</a></li> -->
 					<li class="nav-item dropdown"><a class="nav-link"
 						href="${pageContext.request.contextPath}/workout">Workout</a>
 						<div class="dropdown-content">
@@ -56,6 +56,8 @@
 						href="${pageContext.request.contextPath}/mypage">My Page</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="${pageContext.request.contextPath}/settings">Settings</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="${pageContext.request.contextPath}/more">More</a></li>
 				</ul>
 			</div>
 
@@ -72,11 +74,11 @@
 					<c:if test="${pageContext.request.userPrincipal.name != null }">
 						<a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">LOGOUT</a>
 					</c:if></li>
-				<li class="nav-item">
+				<!--  <li class="nav-item">
 				<c:if test="${pageContext.request.userPrincipal.name == null }">
 				<a class="nav-link" href="${pageContext.request.contextPath}/signup">SIGNUP</a>
 				</c:if>
-				</li>
+				</li> -->
 			</ul>
 			<form id="logout" action="<c:url value="/logout"/>" method="post">
 				<input type="hidden" name="${_csrf.parameterName }"

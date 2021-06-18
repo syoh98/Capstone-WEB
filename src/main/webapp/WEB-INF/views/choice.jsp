@@ -81,7 +81,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/wideSquat.png" alt="..." />
+                           src="resources/images/gif/wideSquat.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -102,7 +102,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/squat.png" alt="..." />
+                           src="resources/images/gif/squat.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -123,7 +123,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/lunge.png" alt="..." />
+                           src="resources/images/gif/lunge.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -144,7 +144,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/sideLunge.png" alt="..." />
+                           src="resources/images/gif/sideLunge.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -167,7 +167,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/sideKneeUp.png" alt="..." />
+                           src="resources/images/gif/sideKneeUp.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -188,12 +188,12 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/standingSideLegRaises.png"
+                           src="resources/images/gif/sideLateralRaise.gif"
                            alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>사이트 레그레이즈</p>
+                     <p>스탠딩 사이드 레그레이즈</p>
                   </div>
                </div>
 
@@ -210,7 +210,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/goodMorning.png" alt="..." />
+                           src="resources/images/gif/goodMorning.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -231,7 +231,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/sideLateralRaise.png"
+                           src="resources/images/gif/standingSideLegRaises.gif"
                            alt="..." />
                      </div>
                   </div>
@@ -255,7 +255,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/standingShoulderPress.png"
+                           src="resources/images/gif/standingShoulderPress.gif"
                            alt="..." />
                      </div>
                   </div>
@@ -277,7 +277,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/frontRaise.png" alt="..." />
+                           src="resources/images/gif/frontRaise.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -286,27 +286,6 @@
                </div>
 
                <!-- Portfolio Item 11-->
-               <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
-                     data-target="#portfolioModal11">
-                     <div
-                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div
-                           class="portfolio-item-caption-content text-center text-white">
-                           <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <div>
-                        <img class="img-fluid"
-                           src="resources/images/workoutImage/sideKick.png" alt="..." />
-                     </div>
-                  </div>
-                  <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>사이드 킥</p>
-                  </div>
-               </div>
-
-               <!-- Portfolio Item 12-->
                <div class="col-md-6 col-lg-3 mb-5">
                   <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
                      data-target="#portfolioModal12">
@@ -319,7 +298,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/stepUp.png" alt="..." />
+                           src="resources/images/gif/step.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -327,11 +306,9 @@
                   </div>
                </div>
 
-               <!-- ------------------------- 4번째 줄 ----------------------------- -->
-
-               <!-- Portfolio Item 13-->
+               <!-- Portfolio Item 12-->
                <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
+                   <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
                      data-target="#portfolioModal13">
                      <div
                         class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -342,7 +319,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/dumbbellThruster.png"
+                           src="resources/images/gif/dumbebellTruster.gif"
                            alt="..." />
                      </div>
                   </div>
@@ -351,31 +328,11 @@
                   </div>
                </div>
 
-               <!-- Portfolio Item 14-->
-               <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
-                     data-target="#portfolioModal14">
-                     <div
-                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div
-                           class="portfolio-item-caption-content text-center text-white">
-                           <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <div>
-                        <img class="img-fluid"
-                           src="resources/images/workoutImage/kickAlternateToeTouch.png"
-                           alt="..." />
-                     </div>
-                  </div>
-                  <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>얼터네이트 토 터치</p>
-                  </div>
-               </div>
+               <!-- ------------------------- 4번째 줄 ----------------------------- -->
 
-               <!-- Portfolio Item 15-->
+               <!-- Portfolio Item 13-->
                <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
+                 <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
                      data-target="#portfolioModal15">
                      <div
                         class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -386,7 +343,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/chairSquat.png" alt="..." />
+                           src="resources/images/gif/chairSquat.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -394,10 +351,10 @@
                   </div>
                </div>
 
-               <!-- Portfolio Item 16-->
+               <!-- Portfolio Item 14-->
                <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
-                     data-target="#portfolioModal16">
+                 <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
+                     data-target="#portfolioModal20">
                      <div
                         class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div
@@ -407,17 +364,16 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/chairLunge.png" alt="..." />
+                           src="resources/images/gif/standingPulldwon.gif"
+                           alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>의자 런지</p>
+                     <p>스탠딩 풀 다운</p>
                   </div>
                </div>
 
-               <!-- ------------------------- 5번째 줄 ----------------------------- -->
-
-               <!-- Portfolio Item 17-->
+               <!-- Portfolio Item 15-->
                <div class="col-md-6 col-lg-3 mb-5">
                   <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
                      data-target="#portfolioModal17">
@@ -430,7 +386,7 @@
                      </div>
                      <div>
                         <img class="img-fluid"
-                           src="resources/images/workoutImage/backwardLunge.png" alt="..." />
+                           src="resources/images/gif/backwardLunge.gif" alt="..." />
                      </div>
                   </div>
                   <div class="pt-3 text-dark text-center font-weight-bold">
@@ -438,7 +394,7 @@
                   </div>
                </div>
 
-               <!-- Portfolio Item 18-->
+               <!-- Portfolio Item 16-->
                <div class="col-md-6 col-lg-3 mb-5">
                   <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
                      data-target="#portfolioModal18">
@@ -459,50 +415,9 @@
                   </div>
                </div>
 
-               <!-- Portfolio Item 19-->
-               <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
-                     data-target="#portfolioModal19">
-                     <div
-                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div
-                           class="portfolio-item-caption-content text-center text-white">
-                           <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <div>
-                        <img class="img-fluid"
-                           src="resources/images/workoutImage/dumbbellDeadlift.PNG"
-                           alt="..." />
-                     </div>
-                  </div>
-                  <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>데드리프트</p>
-                  </div>
-               </div>
+               <!-- ------------------------- 5번째 줄 ----------------------------- -->
 
-               <!-- Portfolio Item 20-->
-               <div class="col-md-6 col-lg-3 mb-5">
-                  <div class="portfolio-item workout-wrap mx-auto" data-toggle="modal"
-                     data-target="#portfolioModal20">
-                     <div
-                        class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div
-                           class="portfolio-item-caption-content text-center text-white">
-                           <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <div>
-                        <img class="img-fluid"
-                           src="resources/images/workoutImage/standingPulldown.PNG"
-                           alt="..." />
-                     </div>
-                  </div>
-                  <div class="pt-3 text-dark text-center font-weight-bold">
-                     <p>스탠딩 풀 다운</p>
-                  </div>
-               </div>
-
+               
 
             </div>
          </div>

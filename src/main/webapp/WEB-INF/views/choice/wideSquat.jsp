@@ -26,7 +26,7 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="resources/css/styles.css" rel="stylesheet" />
 <link href="resources/css/choice.css" rel="stylesheet" />
-<title>Choice-Wide Squat</title>
+<title>HealthU:: Wide Squat</title>
 <style>
 .modal-header .close2 {
 	padding: 1rem 1rem;
@@ -135,7 +135,7 @@ table th, table td {
 				<table>
 					<tr>
 						<td style="width: 20%;"><img class="choice-img-fluid"
-							src="resources/images/workoutImage/wideSquat.png" alt="..." /></td>
+							src="resources/images/gif/wideSquat.gif" alt="..." /></td>
 
 						<td rowspan="3" style="width: 80%;">
 							<div class="circle-out center">
@@ -307,18 +307,6 @@ table th, table td {
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="resources/js/jquery.confetti.js"></script>
 
-	<script>
-      var particleColors = {
-         colorOptions : [ "DodgerBlue", "OliveDrab", "Gold", "pink",
-               "SlateBlue", "lightblue", "Violet", "PaleGreen",
-               "SteelBlue", "SandyBrown", "Chocolate", "Crimson" ],
-         colorIndex : 0,
-         colorIncrementer : 0,
-         colorThreshold : 10
-      }
-   </script>
-
-
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -342,7 +330,7 @@ table th, table td {
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
         // Teachable Machine 내보내기 패널에서 제공하는 모델에 대한 링크
-        const URL = "resources/model/";
+        const URL = "resources/model/wideSquat";
         let model, webcam, ctx, labelContainer, maxPredictions;
 
         async function init() { //model을 불러오고, 카메라를 설정해 준다음 loop를 돈다. 
@@ -403,7 +391,7 @@ table th, table td {
             const prediction = await model.predict(posenetOutput);
             //stand:0  squat:1  bent:2
             if (prediction[0].probability.toFixed(2) > 0.90) {
-                if (status == "squat") {
+                if (status == "wideSquat") {
                     count++; //카운트 증가
                     progress = progress-32.7;
                     if(progress <= 0) {
@@ -419,16 +407,16 @@ table th, table td {
                 status = "stand";
  
             } else if (prediction[1].probability.toFixed(2) == 1.00) {
-                status = "squat";  
+                status = "wideSquat";  
                 
                 msg = "AGAIN";
                   $('#message').css("color","white");
                 $('#message').html(msg);
             } else if (prediction[2].probability.toFixed(2) == 1.00) {
-                if (status == "squat" || status == "stand") {
+                if (status == "wideSquat" || status == "stand") {
                     
                 }
-                status = "bent"; //우리는 wrong을 사용하고 있음.
+                status = "wrong"; //우리는 wrong을 사용하고 있음.
                   msg = "AGAIN";
                   $('#message').css("color","red");
                 $('#message').html(msg);

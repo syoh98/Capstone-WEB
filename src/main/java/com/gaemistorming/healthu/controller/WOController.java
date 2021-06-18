@@ -143,6 +143,12 @@ public class WOController {
 		
 		return "settings";
 	}
+	
+	@RequestMapping("/more")
+	public String showMore(Model model) {
+
+		return "more";
+	}
 
 	@RequestMapping("/signin")
 	public String showSignin(@RequestParam(value = "error", required = false) String error, Model model) {
@@ -558,125 +564,303 @@ public class WOController {
 //		
 //		return "login";
 //	}
-    
-    @RequestMapping("/choiceEnd")
-    public String showChoiceEnd(Model model) {
-       return "choiceEnd";
-    }
 
 	// choice �슫�룞 mapping
 	@RequestMapping("/backwardLunge")
 	public String showBackwardLunge(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/backwardLunge";
 	}
 
 	@RequestMapping("/bentKneePushCrunch")
 	public String showbBentKneePushCrunch(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/bentKneePushCrunch";
 	}
 
 	@RequestMapping("/chairLunge")
 	public String showChairLunge(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/chairLunge";
 	}
 
 	@RequestMapping("/chairSquat")
 	public String showChairSquat(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/chairSquat";
 	}
 
 	@RequestMapping("/dumbbellDeadlift")
 	public String showDumbbellDeadlift(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/dumbbellDeadlift";
 	}
 
 	@RequestMapping("/dumbbellThruster")
 	public String showDumbbellThruster(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/dumbbellThruster";
 	}
 
 	@RequestMapping("/frontRaise")
 	public String showFrontRaise(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/frontRaise";
 	}
 
 	@RequestMapping("/goodMorning")
 	public String showGoodMorning(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/goodMorning";
 	}
 
 	@RequestMapping("/hipBridge")
 	public String showHipBridge(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/hipBridge";
 	}
 
 	@RequestMapping("/kickAlternateToeTouch")
 	public String showKickAlternateToeTouch(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/kickAlternateToeTouch";
 	}
 
 	@RequestMapping("/kneePushUp")
 	public String showKneePushUp(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/kneePushUp";
 	}
 
 	@RequestMapping("/lunge")
 	public String showLunge(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/lunge";
 	}
 
 	@RequestMapping("/lyingHipExtension")
 	public String showLyingHipExtension(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/lyingHipExtension";
 	}
 
 	@RequestMapping("/quarterSquat")
 	public String showQuarterSquat(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/quarterSquat";
 	}
 
 	@RequestMapping("/sideKick")
 	public String showSideKick(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/sideKick";
 	}
 
 	@RequestMapping("/sideKneeUp")
 	public String showSideKneeUp(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/sideKneeUp";
 	}
 
 	@RequestMapping("/sideLateralRaise")
 	public String showSideLateralRaise(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/sideLateralRaise";
 	}
 
 	@RequestMapping("/sideLunge")
 	public String showSideLunge(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/sideLunge";
 	}
 
 	@RequestMapping("/squat")
 	public String showSquat(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/squat";
 	}
 
 	@RequestMapping("/standingPulldown")
 	public String showStandingPulldown(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/standingPulldown";
 	}
 
 	@RequestMapping("/standingShoulderPress")
 	public String showStandingShoulderPress(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/standingShoulderPress";
 	}
 
 	@RequestMapping("/standingSideLegRaises")
 	public String showStandingSideLegRaises(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
+		
 		return "choice/standingSideLegRaises";
 	}
 
 	@RequestMapping("/stepUp")
 	public String showStepUp(Model model) {
+
+		Object current_user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		String username = ((User) current_user).getUsername();
+		Long user_id = Long.parseLong(username);
+		Users user = userService.getUserById(user_id);
+		model.addAttribute("user", user);
+		
 		return "choice/stepUp";
 	}
 
