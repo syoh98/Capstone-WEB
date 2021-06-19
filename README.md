@@ -1,4 +1,4 @@
-# 개미스토밍(Gaemistorming)
+### HealthU made by Gaemistorming
 
 
 #### <u>목차</u>
@@ -68,10 +68,33 @@ Deep Learning을 이용한 AI 홈 트레이닝 웹 애플리케이션
 Teachable Machine을 이용하여 사용자의 운동 동작에 대한 정확도를 인식하도록 구현
 
 
-
 **나**.  AWS ACM**을 이용한** **https** **서버 구축**
 
 Web에서 카메라 권한 허가를 받기 위해 인증서 발급
-
 사용자의 개인정보 보안성 증진
+
+
+
+#### **2** **프로젝트 개요**
+
+##### **2.1** **프로젝트 구조**
+
+![image](https://user-images.githubusercontent.com/80435578/122635548-917cd200-d11f-11eb-8841-3dc4c703a492.png)
+
+
+##### **2.2 DB** **구조**
+![image](https://user-images.githubusercontent.com/80435578/122635555-9ccffd80-d11f-11eb-8ebf-585c89a6065a.png)
+
+
+
+##### **2.3** **프로젝트 결과물**
+
+- **초기화면**  
+![image](https://user-images.githubusercontent.com/80435578/122635570-b2ddbe00-d11f-11eb-9977-873642d76af6.png)
+
+https://gaemistorming-healthu.com 으로 접속했을 때 가장 먼저 볼 수 있는 커버 화면으로 로고가 있고, Let’s go를 클릭하면 홈 화면으로 접속할 수 있다.
+
+
+
+
 
