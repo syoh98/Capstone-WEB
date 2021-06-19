@@ -89,7 +89,7 @@
 
 ##### - **메인화면**
 
-![image](https://user-images.githubusercontent.com/80435578/122635720-824a5400-d120-11eb-8b72-a1e916116fa2.png)
+![image](https://user-images.githubusercontent.com/80435578/122636614-2930ef00-d125-11eb-93e7-16a0c54a627b.png)
 
 ###### 메인 화면 에는 슬라이드 형식의 소개 페이지가 있으며, 상단 메뉴를 통해 원하는 페이지로 이동할 수 있다.
 
@@ -157,8 +157,6 @@
 
 ![image](https://user-images.githubusercontent.com/80435578/122635854-1fa58800-d121-11eb-9c74-0da4afbc22be.png)
 
-![image](https://user-images.githubusercontent.com/80435578/122636563-e53dea00-d124-11eb-96a7-de69d1b2cba8.png)
-
 ###### 마이페이지 화면에서는 닉네임과 키, 몸무게 등의 본인의 정보, 일일 누적 칼로리, 일일 누적 시간을 이용하여 운동 기록과 보유한 캐릭터 목록을 확인할 수 있다.
 
 ​ 
@@ -215,7 +213,7 @@
 
 #### **2.6** **관련기술**
 
-![image](https://user-images.githubusercontent.com/80435578/122635926-8034c500-d121-11eb-9dbc-5dceb1b069af.png)
+![image](https://user-images.githubusercontent.com/80435578/122636647-4a91db00-d125-11eb-9d04-f4df6b7a7a3a.png)
 
 ​ 
 
