@@ -33,7 +33,7 @@
 ​ 
 ​   
 
-####  **1** **프로젝트 수행 목적**
+###  **1** **프로젝트 수행 목적**
 
 #### **1.1** **프로젝트 정의**
 
@@ -64,24 +64,24 @@
 ​
 ​ 
 
-#### **2** **프로젝트 개요**
-##### **2.1** **프로젝트 구조**
+### **2** **프로젝트 개요**
+#### **2.1** **프로젝트 구조**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635548-917cd200-d11f-11eb-8841-3dc4c703a492.png)
 
 ​ 
 ​ 
 
-##### **2.2 DB** **구조**
+#### **2.2 DB** **구조**
 ![image](https://user-images.githubusercontent.com/80435578/122635555-9ccffd80-d11f-11eb-8ebf-585c89a6065a.png)
 
 
 ​ 
 ​ 
 
-##### **2.3** **프로젝트 결과물**
+#### **2.3** **프로젝트 결과물**
 
-- **초기화면**  
+##### - **초기화면**  
 
 ![image](https://user-images.githubusercontent.com/80435578/122635570-b2ddbe00-d11f-11eb-9977-873642d76af6.png)
 
@@ -91,7 +91,7 @@
 
 ​ 
 
-- **메인화면**
+##### - **메인화면**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635720-824a5400-d120-11eb-8b72-a1e916116fa2.png)
 
@@ -99,7 +99,7 @@
 
 ​ 
 
-- **로그인 화면**
+##### - **로그인 화면**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635752-9c843200-d120-11eb-9b86-cb6c364e586f.png)
 
@@ -107,7 +107,7 @@
 
 ​ 
 
-- **Workout 화면**
+##### - **Workout 화면**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635778-b9206a00-d120-11eb-829a-6616807cc29f.png)
 
@@ -115,7 +115,7 @@
 
 ​ 
 
-- **Choice**
+##### - **Choice**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635790-c6d5ef80-d120-11eb-897b-bb0ac919ebeb.png)
 
@@ -123,7 +123,7 @@
 
 ​ 
 
-- **Collection**
+##### - **Collection**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635798-d0f7ee00-d120-11eb-9998-95221a30a2a2.png)
 
@@ -132,7 +132,7 @@
 
 ​ 
 
-- **운동 선택 시**
+##### - **운동 선택 시**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635813-e0773700-d120-11eb-9b6c-ced21714e7be.png)
 
@@ -140,7 +140,7 @@
 
 ​ 
 
-- **운동 시**
+##### - **운동 시**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635824-f4229d80-d120-11eb-8b3c-e09695c54732.png)
 
@@ -148,7 +148,7 @@
 
 ​ 
 
-- **캐릭터 상점**
+##### - **캐릭터 상점**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635847-0e5c7b80-d121-11eb-847a-ab9cc9f32afb.png)
 
@@ -156,7 +156,7 @@
 
 ​ 
 
-- **마이페이지**
+##### - **마이페이지**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635854-1fa58800-d121-11eb-9c74-0da4afbc22be.png)
 
@@ -164,7 +164,7 @@
 
 ​ 
 
-- **settings**
+##### - **settings**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635871-36e47580-d121-11eb-9bca-f3cd0261bc8e.png)
 
@@ -172,7 +172,7 @@
 
 ​ 
 
-- **more**
+##### - **more**
 
 ![image](https://user-images.githubusercontent.com/80435578/122635886-48c61880-d121-11eb-9290-1ae81d0b684e.png)
 
