@@ -79,7 +79,7 @@
 
 ##### - **초기화면**  
 
-![image](https://user-images.githubusercontent.com/80435578/122635570-b2ddbe00-d11f-11eb-9977-873642d76af6.png)
+![image](https://user-images.githubusercontent.com/80435578/122636480-7365a080-d124-11eb-9b9e-a49f6e365088.png)
 
 
 ###### https://gaemistorming-healthu.com 으로 접속했을 때 가장 먼저 볼 수 있는 커버 화면으로 로고가 있고, Let’s go를 클릭하면 홈 화면으로 접속할 수 있다.
@@ -97,7 +97,7 @@
 
 ##### - **로그인 화면**
 
-![image](https://user-images.githubusercontent.com/80435578/122635752-9c843200-d120-11eb-9b86-cb6c364e586f.png)
+![image](https://user-images.githubusercontent.com/80435578/122636505-9a23d700-d124-11eb-8ea4-e6cb16e75e0f.png)
 
 ###### ID와 PW를 입력하여 로그인을 하여 권한이 필요한 다른 메뉴들을 이용할 수 있다.
 
@@ -108,15 +108,13 @@
 ![image](https://user-images.githubusercontent.com/80435578/122636442-40231180-d124-11eb-82f3-0a5055717163.png)
 
 
-![image](https://user-images.githubusercontent.com/80435578/122635778-b9206a00-d120-11eb-829a-6616807cc29f.png)
-
 ###### Workout 메뉴를 누르면 원하는 운동만 자유롭게 선택할 수 있는 Choice 와 정해진 루틴을 통해 집중적인 운동을 할 수 있는 Collection 두 가지 방식으로 접근할 수 있다.
 
 ​ 
 
 ##### - **Choice**
 
-![image](https://user-images.githubusercontent.com/80435578/122635790-c6d5ef80-d120-11eb-897b-bb0ac919ebeb.png)
+![image](https://user-images.githubusercontent.com/80435578/122636522-a90a8980-d124-11eb-9302-51bf62ff059f.png)
 
 ###### Choice 운동에서는 gif 이미지의 운동 목록을 보고 원하는 운동 종목만을 선택하여 시작할 수 있다.
 
@@ -124,7 +122,7 @@
 
 ##### - **Collection**
 
-![image](https://user-images.githubusercontent.com/80435578/122635798-d0f7ee00-d120-11eb-9998-95221a30a2a2.png)
+![image](https://user-images.githubusercontent.com/80435578/122636530-b4f64b80-d124-11eb-9d2e-bd84354369e6.png)
 
 ###### Collection 운동에서는 부위별 집중 운동을 할 수 있는 미리 정해진 루틴을 따라 운동을 할 수 있도록 구성되어 있다.
 
@@ -133,7 +131,7 @@
 
 ##### - **운동 선택 시**
 
-![image](https://user-images.githubusercontent.com/80435578/122635813-e0773700-d120-11eb-9b6c-ced21714e7be.png)
+![image](https://user-images.githubusercontent.com/80435578/122636541-c3446780-d124-11eb-9d66-9c5de10519c5.png)
 
 ###### 운동을 선택하면 모달 창이 뜨고, 운동에 대한 이미지와 설명을 볼 수 있다. 시작버튼을 누르면 운동이 시작된다.
 
@@ -141,7 +139,7 @@
 
 ##### - **운동 시**
 
-![image](https://user-images.githubusercontent.com/80435578/122635824-f4229d80-d120-11eb-8b3c-e09695c54732.png)
+![image](https://user-images.githubusercontent.com/80435578/122636549-cd666600-d124-11eb-9b8e-a31e776d9594.png)
 
 ###### 운동 화면은 좌측 상단의 운동 자세 이미지, 좌측 중앙의 타이머, 좌측 하단의 자세에 대한 Great, Again 등의 평가로 이루어져 있고, 처음 들어가면 카메라 권한을 묻고, 권한을 받으면 우측에서 카메라를 통해 동작을 확인하며 운동을 시작한다.
 
@@ -149,7 +147,7 @@
 
 ##### - **캐릭터 상점**
 
-![image](https://user-images.githubusercontent.com/80435578/122635847-0e5c7b80-d121-11eb-847a-ab9cc9f32afb.png)
+![image](https://user-images.githubusercontent.com/80435578/122636556-d8b99180-d124-11eb-99b6-f4730e12d86e.png)
 
 ###### 운동을 하여 받은 포인트를 통해 캐릭터를 구매할 수 있다. 구매한 캐릭터는 구매완료, 포인트가 부족하여 불가능한 캐릭터는 구매 불가가 뜬다.
 
@@ -159,13 +157,16 @@
 
 ![image](https://user-images.githubusercontent.com/80435578/122635854-1fa58800-d121-11eb-9c74-0da4afbc22be.png)
 
+![image](https://user-images.githubusercontent.com/80435578/122636563-e53dea00-d124-11eb-96a7-de69d1b2cba8.png)
+
 ###### 마이페이지 화면에서는 닉네임과 키, 몸무게 등의 본인의 정보, 일일 누적 칼로리, 일일 누적 시간을 이용하여 운동 기록과 보유한 캐릭터 목록을 확인할 수 있다.
 
 ​ 
 
 ##### - **settings**
 
-![image](https://user-images.githubusercontent.com/80435578/122635871-36e47580-d121-11eb-9bca-f3cd0261bc8e.png)
+![image](https://user-images.githubusercontent.com/80435578/122636570-f1c24280-d124-11eb-8649-c5e827d166ba.png)
+
 
 ###### 설정 창에서 닉네임, 키와 체중을 변경할 수 있고, 보유한 캐릭터 내에서 프로필 캐릭터도 변경할 수 있다.
 
@@ -173,7 +174,7 @@
 
 ##### - **more**
 
-![image](https://user-images.githubusercontent.com/80435578/122635886-48c61880-d121-11eb-9290-1ae81d0b684e.png)
+![image](https://user-images.githubusercontent.com/80435578/122636578-fe469b00-d124-11eb-9a86-6fe43752deb3.png)
 
 ###### More 화면에서는 HealthU에 대한 설명과 추가적인 운동을 할 수 있는 영상 정보들을 확인할 수 있다.
 
