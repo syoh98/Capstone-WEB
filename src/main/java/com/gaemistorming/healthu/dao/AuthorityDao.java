@@ -58,7 +58,7 @@ public class AuthorityDao {
 		
 		Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(authority);
-        session.flush(); // 얜 있어도 그만 없어도 그만
+        session.flush();
 
 	}
 
