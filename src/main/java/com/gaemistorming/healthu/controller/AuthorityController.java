@@ -24,7 +24,7 @@ import com.gaemistorming.healthu.service.AuthorityService;
 @RequestMapping(path="/authorities")
 public class AuthorityController {
 
-	@Autowired
+    @Autowired
     private AuthorityService authorityService;
 
     @RequestMapping(method = RequestMethod.GET)
